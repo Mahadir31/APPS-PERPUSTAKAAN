@@ -72,24 +72,24 @@ Partial Class FrmMenuUtama
         'Login
         '
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(180, 22)
+        Me.Login.Size = New System.Drawing.Size(114, 22)
         Me.Login.Text = "Login"
         '
         'LogOut
         '
         Me.LogOut.Name = "LogOut"
-        Me.LogOut.Size = New System.Drawing.Size(180, 22)
+        Me.LogOut.Size = New System.Drawing.Size(114, 22)
         Me.LogOut.Text = "LogOut"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(111, 6)
         '
         'ExitTool
         '
         Me.ExitTool.Name = "ExitTool"
-        Me.ExitTool.Size = New System.Drawing.Size(180, 22)
+        Me.ExitTool.Size = New System.Drawing.Size(114, 22)
         Me.ExitTool.Text = "Exit"
         '
         'MASTER
@@ -102,19 +102,19 @@ Partial Class FrmMenuUtama
         'Petugas
         '
         Me.Petugas.Name = "Petugas"
-        Me.Petugas.Size = New System.Drawing.Size(120, 22)
+        Me.Petugas.Size = New System.Drawing.Size(180, 22)
         Me.Petugas.Text = "Petugas"
         '
         'Anggota
         '
         Me.Anggota.Name = "Anggota"
-        Me.Anggota.Size = New System.Drawing.Size(120, 22)
+        Me.Anggota.Size = New System.Drawing.Size(180, 22)
         Me.Anggota.Text = "Anggota"
         '
         'Buku
         '
         Me.Buku.Name = "Buku"
-        Me.Buku.Size = New System.Drawing.Size(120, 22)
+        Me.Buku.Size = New System.Drawing.Size(180, 22)
         Me.Buku.Text = "Buku"
         '
         'TRANSAKSI

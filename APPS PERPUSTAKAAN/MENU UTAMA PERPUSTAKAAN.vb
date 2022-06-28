@@ -27,4 +27,16 @@
     Private Sub tmtgl_jam_Tick(sender As Object, e As EventArgs) Handles tmtgl_jam.Tick
         tgl_jam.Text = Format(Now, "dd/MMMM/yyyy") & " | " & Format(Now, "HH:mm:ss")
     End Sub
+
+    Private Sub MASTER_Click(sender As Object, e As EventArgs) Handles MASTER.Click
+
+    End Sub
+
+    Private Sub Petugas_Click(sender As Object, e As EventArgs) Handles Petugas.Click
+        FormPetugas.Show()
+    End Sub
+
+    Private Sub Anggota_Click(sender As Object, e As EventArgs) Handles Anggota.Click
+        FormAnggota.Show()
+    End Sub
 End Class

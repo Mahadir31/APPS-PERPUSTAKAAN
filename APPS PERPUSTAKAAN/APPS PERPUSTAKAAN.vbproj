@@ -77,6 +77,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAnggota.Designer.vb">
+      <DependentUpon>FormAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPetugas.Designer.vb">
+      <DependentUpon>FormPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MENU UTAMA PERPUSTAKAAN.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +120,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormAnggota.resx">
+      <DependentUpon>FormAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPetugas.resx">
+      <DependentUpon>FormPetugas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MENU UTAMA PERPUSTAKAAN.resx">
       <DependentUpon>MENU UTAMA PERPUSTAKAAN.vb</DependentUpon>
     </EmbeddedResource>
