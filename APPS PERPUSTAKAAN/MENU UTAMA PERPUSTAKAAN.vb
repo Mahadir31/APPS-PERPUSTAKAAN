@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub Login_Click(sender As Object, e As EventArgs) Handles Login.Click
-        FormLogin.Show()
+        FormLogin.ShowDialog()
     End Sub
 
     Private Sub LogOut_Click(sender As Object, e As EventArgs) Handles LogOut.Click
@@ -33,10 +33,14 @@
     End Sub
 
     Private Sub Petugas_Click(sender As Object, e As EventArgs) Handles Petugas.Click
-        FormPetugas.Show()
+        FormPetugas.ShowDialog()
     End Sub
 
     Private Sub Anggota_Click(sender As Object, e As EventArgs) Handles Anggota.Click
-        FormAnggota.Show()
+        FormAnggota.ShowDialog()
+    End Sub
+
+    Private Sub Buku_Click(sender As Object, e As EventArgs) Handles Buku.Click
+        FormBuku.ShowDialog()
     End Sub
 End Class

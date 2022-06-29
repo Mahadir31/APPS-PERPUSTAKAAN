@@ -102,19 +102,19 @@ Partial Class FrmMenuUtama
         'Petugas
         '
         Me.Petugas.Name = "Petugas"
-        Me.Petugas.Size = New System.Drawing.Size(180, 22)
+        Me.Petugas.Size = New System.Drawing.Size(120, 22)
         Me.Petugas.Text = "Petugas"
         '
         'Anggota
         '
         Me.Anggota.Name = "Anggota"
-        Me.Anggota.Size = New System.Drawing.Size(180, 22)
+        Me.Anggota.Size = New System.Drawing.Size(120, 22)
         Me.Anggota.Text = "Anggota"
         '
         'Buku
         '
         Me.Buku.Name = "Buku"
-        Me.Buku.Size = New System.Drawing.Size(180, 22)
+        Me.Buku.Size = New System.Drawing.Size(120, 22)
         Me.Buku.Text = "Buku"
         '
         'TRANSAKSI
@@ -237,11 +237,9 @@ Partial Class FrmMenuUtama
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "FrmMenuUtama"
-        Me.ShowIcon = False
         Me.Text = "MENU UTAMA PERPUSTAKAAN"
+        Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

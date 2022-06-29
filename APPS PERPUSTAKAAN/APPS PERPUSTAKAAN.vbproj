@@ -83,6 +83,12 @@
     <Compile Include="FormAnggota.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormBuku.Designer.vb">
+      <DependentUpon>FormBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPetugas.Designer.vb">
       <DependentUpon>FormPetugas.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormAnggota.resx">
       <DependentUpon>FormAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuku.resx">
+      <DependentUpon>FormBuku.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPetugas.resx">
       <DependentUpon>FormPetugas.vb</DependentUpon>
