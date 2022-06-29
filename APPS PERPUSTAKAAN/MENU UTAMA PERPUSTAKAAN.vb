@@ -43,4 +43,8 @@
     Private Sub Buku_Click(sender As Object, e As EventArgs) Handles Buku.Click
         FormBuku.ShowDialog()
     End Sub
+
+    Private Sub Peminjaman_Click(sender As Object, e As EventArgs) Handles Peminjaman.Click
+        FormPeminjaman.ShowDialog()
+    End Sub
 End Class

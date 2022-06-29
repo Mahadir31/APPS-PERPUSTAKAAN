@@ -127,13 +127,13 @@ Partial Class FrmMenuUtama
         'Peminjaman
         '
         Me.Peminjaman.Name = "Peminjaman"
-        Me.Peminjaman.Size = New System.Drawing.Size(150, 22)
+        Me.Peminjaman.Size = New System.Drawing.Size(180, 22)
         Me.Peminjaman.Text = "Peminjaman"
         '
         'Pengembalian
         '
         Me.Pengembalian.Name = "Pengembalian"
-        Me.Pengembalian.Size = New System.Drawing.Size(150, 22)
+        Me.Pengembalian.Size = New System.Drawing.Size(180, 22)
         Me.Pengembalian.Text = "Pengembalian"
         '
         'LAPORAN
@@ -238,8 +238,8 @@ Partial Class FrmMenuUtama
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "FrmMenuUtama"
+        Me.ShowInTaskbar = False
         Me.Text = "MENU UTAMA PERPUSTAKAAN"
-        Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
