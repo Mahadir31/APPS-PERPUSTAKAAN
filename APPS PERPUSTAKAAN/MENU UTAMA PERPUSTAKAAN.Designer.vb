@@ -49,6 +49,7 @@ Partial Class FrmMenuUtama
         Me.NamaPetugas = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel5 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tmtgl_jam = New System.Windows.Forms.Timer(Me.components)
+        Me.CETAKLAPORAN = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -127,17 +128,18 @@ Partial Class FrmMenuUtama
         'Peminjaman
         '
         Me.Peminjaman.Name = "Peminjaman"
-        Me.Peminjaman.Size = New System.Drawing.Size(180, 22)
+        Me.Peminjaman.Size = New System.Drawing.Size(150, 22)
         Me.Peminjaman.Text = "Peminjaman"
         '
         'Pengembalian
         '
         Me.Pengembalian.Name = "Pengembalian"
-        Me.Pengembalian.Size = New System.Drawing.Size(180, 22)
+        Me.Pengembalian.Size = New System.Drawing.Size(150, 22)
         Me.Pengembalian.Text = "Pengembalian"
         '
         'LAPORAN
         '
+        Me.LAPORAN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CETAKLAPORAN})
         Me.LAPORAN.Name = "LAPORAN"
         Me.LAPORAN.Size = New System.Drawing.Size(73, 20)
         Me.LAPORAN.Text = "LAPORAN"
@@ -227,6 +229,12 @@ Partial Class FrmMenuUtama
         '
         Me.tmtgl_jam.Enabled = True
         '
+        'CETAKLAPORAN
+        '
+        Me.CETAKLAPORAN.Name = "CETAKLAPORAN"
+        Me.CETAKLAPORAN.Size = New System.Drawing.Size(180, 22)
+        Me.CETAKLAPORAN.Text = "CETAK LAPORAN"
+        '
         'FrmMenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -276,4 +284,5 @@ Partial Class FrmMenuUtama
     Friend WithEvents NamaPetugas As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel5 As ToolStripStatusLabel
     Friend WithEvents tmtgl_jam As Timer
+    Friend WithEvents CETAKLAPORAN As ToolStripMenuItem
 End Class

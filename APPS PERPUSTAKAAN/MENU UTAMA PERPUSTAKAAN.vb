@@ -47,4 +47,13 @@
     Private Sub Peminjaman_Click(sender As Object, e As EventArgs) Handles Peminjaman.Click
         FormPeminjaman.ShowDialog()
     End Sub
+
+    Private Sub Pengembalian_Click(sender As Object, e As EventArgs) Handles Pengembalian.Click
+        FormPengembalian.ShowDialog()
+    End Sub
+
+    Private Sub CETAKLAPORAN_Click(sender As Object, e As EventArgs) Handles CETAKLAPORAN.Click
+        FormLAPORAN.ShowDialog()
+        FormLAPORAN.Dispose()
+    End Sub
 End Class
