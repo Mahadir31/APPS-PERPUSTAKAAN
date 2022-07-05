@@ -55,7 +55,7 @@ Partial Class FormPeminjaman
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dgPinjam = New System.Windows.Forms.DataGridView()
-        Me.Simpan = New System.Windows.Forms.Button()
+        Me.Tambah = New System.Windows.Forms.Button()
         Me.Keluar = New System.Windows.Forms.Button()
         Me.input = New System.Windows.Forms.Button()
         Me.txtJumlah = New System.Windows.Forms.TextBox()
@@ -395,15 +395,15 @@ Partial Class FormPeminjaman
         Me.dgPinjam.Size = New System.Drawing.Size(587, 128)
         Me.dgPinjam.TabIndex = 92
         '
-        'Simpan
+        'Tambah
         '
-        Me.Simpan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Simpan.Location = New System.Drawing.Point(15, 410)
-        Me.Simpan.Name = "Simpan"
-        Me.Simpan.Size = New System.Drawing.Size(75, 23)
-        Me.Simpan.TabIndex = 91
-        Me.Simpan.Text = "SIMPAN"
-        Me.Simpan.UseVisualStyleBackColor = True
+        Me.Tambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tambah.Location = New System.Drawing.Point(15, 410)
+        Me.Tambah.Name = "Tambah"
+        Me.Tambah.Size = New System.Drawing.Size(75, 23)
+        Me.Tambah.TabIndex = 91
+        Me.Tambah.Text = "TAMBAH"
+        Me.Tambah.UseVisualStyleBackColor = True
         '
         'Keluar
         '
@@ -654,7 +654,7 @@ Partial Class FormPeminjaman
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.dgPinjam)
-        Me.Controls.Add(Me.Simpan)
+        Me.Controls.Add(Me.Tambah)
         Me.Controls.Add(Me.Keluar)
         Me.Controls.Add(Me.input)
         Me.Controls.Add(Me.txtJumlah)
@@ -721,7 +721,7 @@ Partial Class FormPeminjaman
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents dgPinjam As DataGridView
-    Friend WithEvents Simpan As Button
+    Friend WithEvents Tambah As Button
     Friend WithEvents Keluar As Button
     Friend WithEvents input As Button
     Friend WithEvents txtJumlah As TextBox

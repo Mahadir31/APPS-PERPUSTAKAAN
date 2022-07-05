@@ -63,6 +63,7 @@ Public Class FormBuku
         Else
             If kodebuku.Text = "" Or judulbuku.Text = "" Or pengarangbuku.Text = "" Or penerbit.Text = "" Or tahunbuku.Text = "" Or stokbuku.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodebuku.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -89,6 +90,7 @@ Public Class FormBuku
         Else
             If kodebuku.Text = "" Or judulbuku.Text = "" Or pengarangbuku.Text = "" Or penerbit.Text = "" Or tahunbuku.Text = "" Or stokbuku.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodebuku.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -115,6 +117,7 @@ Public Class FormBuku
         Else
             If kodebuku.Text = "" Or judulbuku.Text = "" Or pengarangbuku.Text = "" Or penerbit.Text = "" Or tahunbuku.Text = "" Or stokbuku.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodebuku.Focus()
             Else
                 Try
                     Call OpenConn()

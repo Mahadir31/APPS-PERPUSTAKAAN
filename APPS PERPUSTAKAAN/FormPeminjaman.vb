@@ -38,7 +38,7 @@ Public Class FormPeminjaman
 
         LblNamaPetugas.Text = FrmMenuUtama.NamaPetugas.Text
 
-        Simpan.Text = "SIMPAN"
+        Tambah.Text = "TAMBAH"
         Keluar.Text = "KELUAR"
 
         kodeanggota.Text = ""
@@ -101,6 +101,7 @@ Public Class FormPeminjaman
     End Sub
     Private Sub FormPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call Mati()
+        kodeanggota.Text = ""
         lbltanggal.Text = Today
     End Sub
 
@@ -150,6 +151,7 @@ Public Class FormPeminjaman
         Else
             If txtKode.Text = "" Or txtJumlah.Text = "" Then
                 MsgBox("Silahkan masukkan Kode Buku Dan Tekan ENTER !!!")
+                txtKode.Focus()
             Else
                 dgPinjam.Rows.Add(New String() {txtKode.Text, LblBuku.Text, LblPengarang.Text, LblPenerbit.Text, txtJumlah.Text})
                 txtKode.Text = ""
@@ -166,9 +168,9 @@ Public Class FormPeminjaman
         End If
     End Sub
 
-    Private Sub Simpan_Click(sender As Object, e As EventArgs) Handles Simpan.Click
-        If Simpan.Text = "SIMPAN" Then
-            Simpan.Text = "TAMBAH"
+    Private Sub Tambah_Click(sender As Object, e As EventArgs) Handles Tambah.Click
+        If Tambah.Text = "TAMBAH" Then
+            Tambah.Text = "SIMPAN"
             Keluar.Text = "&CANCEL"
             Call Tampilkan()
         Else
@@ -211,6 +213,5 @@ Public Class FormPeminjaman
 
     Private Sub FormPeminjaman_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         dgtelahpinjam.Columns.Clear()
-        kodeanggota.Text = ""
     End Sub
 End Class

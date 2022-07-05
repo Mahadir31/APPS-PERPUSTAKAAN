@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmMenuUtama
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmMenuUtama
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -49,13 +49,13 @@ Partial Class FrmMenuUtama
         Me.NamaPetugas = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel5 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tmtgl_jam = New System.Windows.Forms.Timer(Me.components)
-        Me.CETAKLAPORAN = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.LightGray
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FILE, Me.MASTER, Me.TRANSAKSI, Me.LAPORAN})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -66,82 +66,86 @@ Partial Class FrmMenuUtama
         'FILE
         '
         Me.FILE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Login, Me.LogOut, Me.ToolStripMenuItem1, Me.ExitTool})
+        Me.FILE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.FILE.ForeColor = System.Drawing.Color.Black
         Me.FILE.Name = "FILE"
-        Me.FILE.Size = New System.Drawing.Size(40, 20)
+        Me.FILE.Size = New System.Drawing.Size(41, 20)
         Me.FILE.Text = "FILE"
         '
         'Login
         '
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(114, 22)
+        Me.Login.Size = New System.Drawing.Size(180, 22)
         Me.Login.Text = "Login"
         '
         'LogOut
         '
         Me.LogOut.Name = "LogOut"
-        Me.LogOut.Size = New System.Drawing.Size(114, 22)
+        Me.LogOut.Size = New System.Drawing.Size(180, 22)
         Me.LogOut.Text = "LogOut"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(111, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
         '
         'ExitTool
         '
         Me.ExitTool.Name = "ExitTool"
-        Me.ExitTool.Size = New System.Drawing.Size(114, 22)
+        Me.ExitTool.Size = New System.Drawing.Size(180, 22)
         Me.ExitTool.Text = "Exit"
         '
         'MASTER
         '
         Me.MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Petugas, Me.Anggota, Me.Buku})
+        Me.MASTER.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.MASTER.Name = "MASTER"
-        Me.MASTER.Size = New System.Drawing.Size(63, 20)
+        Me.MASTER.Size = New System.Drawing.Size(66, 20)
         Me.MASTER.Text = "MASTER"
         '
         'Petugas
         '
         Me.Petugas.Name = "Petugas"
-        Me.Petugas.Size = New System.Drawing.Size(120, 22)
+        Me.Petugas.Size = New System.Drawing.Size(180, 22)
         Me.Petugas.Text = "Petugas"
         '
         'Anggota
         '
         Me.Anggota.Name = "Anggota"
-        Me.Anggota.Size = New System.Drawing.Size(120, 22)
+        Me.Anggota.Size = New System.Drawing.Size(180, 22)
         Me.Anggota.Text = "Anggota"
         '
         'Buku
         '
         Me.Buku.Name = "Buku"
-        Me.Buku.Size = New System.Drawing.Size(120, 22)
+        Me.Buku.Size = New System.Drawing.Size(180, 22)
         Me.Buku.Text = "Buku"
         '
         'TRANSAKSI
         '
         Me.TRANSAKSI.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Peminjaman, Me.Pengembalian})
+        Me.TRANSAKSI.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.TRANSAKSI.Name = "TRANSAKSI"
-        Me.TRANSAKSI.Size = New System.Drawing.Size(79, 20)
+        Me.TRANSAKSI.Size = New System.Drawing.Size(85, 20)
         Me.TRANSAKSI.Text = "TRANSAKSI"
         '
         'Peminjaman
         '
         Me.Peminjaman.Name = "Peminjaman"
-        Me.Peminjaman.Size = New System.Drawing.Size(150, 22)
+        Me.Peminjaman.Size = New System.Drawing.Size(180, 22)
         Me.Peminjaman.Text = "Peminjaman"
         '
         'Pengembalian
         '
         Me.Pengembalian.Name = "Pengembalian"
-        Me.Pengembalian.Size = New System.Drawing.Size(150, 22)
+        Me.Pengembalian.Size = New System.Drawing.Size(180, 22)
         Me.Pengembalian.Text = "Pengembalian"
         '
         'LAPORAN
         '
-        Me.LAPORAN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CETAKLAPORAN})
+        Me.LAPORAN.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.LAPORAN.Name = "LAPORAN"
-        Me.LAPORAN.Size = New System.Drawing.Size(73, 20)
+        Me.LAPORAN.Size = New System.Drawing.Size(74, 20)
         Me.LAPORAN.Text = "LAPORAN"
         '
         'Label1
@@ -150,7 +154,7 @@ Partial Class FrmMenuUtama
         Me.Label1.BackColor = System.Drawing.Color.LightGray
         Me.Label1.Font = New System.Drawing.Font("Stencil", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(475, 30)
+        Me.Label1.Location = New System.Drawing.Point(475, 2)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(397, 32)
         Me.Label1.TabIndex = 7
@@ -163,7 +167,7 @@ Partial Class FrmMenuUtama
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.BackColor = System.Drawing.Color.White
+        Me.StatusStrip1.BackColor = System.Drawing.Color.LightGray
         Me.StatusStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.tgl_jam, Me.ToolStripStatusLabel3, Me.KodePetugas, Me.ToolStripStatusLabel4, Me.NamaPetugas, Me.ToolStripStatusLabel5, Me.StatusPetugas})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
@@ -174,7 +178,7 @@ Partial Class FrmMenuUtama
         '
         'ToolStripStatusLabel1
         '
-        Me.ToolStripStatusLabel1.BackColor = System.Drawing.Color.White
+        Me.ToolStripStatusLabel1.BackColor = System.Drawing.Color.LightGray
         Me.ToolStripStatusLabel1.LinkColor = System.Drawing.Color.DarkBlue
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(170, 17)
@@ -182,34 +186,33 @@ Partial Class FrmMenuUtama
         '
         'ToolStripStatusLabel2
         '
-        Me.ToolStripStatusLabel2.BackColor = System.Drawing.Color.White
+        Me.ToolStripStatusLabel2.BackColor = System.Drawing.Color.LightGray
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
         Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(113, 17)
         Me.ToolStripStatusLabel2.Text = "Kelompok II Kls A /"
         '
         'tgl_jam
         '
-        Me.tgl_jam.BackColor = System.Drawing.Color.White
+        Me.tgl_jam.BackColor = System.Drawing.Color.LightGray
         Me.tgl_jam.Name = "tgl_jam"
         Me.tgl_jam.Size = New System.Drawing.Size(10, 17)
         Me.tgl_jam.Text = " "
         '
         'ToolStripStatusLabel3
         '
-        Me.ToolStripStatusLabel3.BackColor = System.Drawing.Color.White
+        Me.ToolStripStatusLabel3.BackColor = System.Drawing.Color.LightGray
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
         Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(53, 17)
         Me.ToolStripStatusLabel3.Text = "/ KODE :"
         '
         'KodePetugas
         '
-        Me.KodePetugas.BackColor = System.Drawing.Color.White
         Me.KodePetugas.Name = "KodePetugas"
         Me.KodePetugas.Size = New System.Drawing.Size(0, 17)
         '
         'ToolStripStatusLabel4
         '
-        Me.ToolStripStatusLabel4.BackColor = System.Drawing.Color.White
+        Me.ToolStripStatusLabel4.BackColor = System.Drawing.Color.LightGray
         Me.ToolStripStatusLabel4.Name = "ToolStripStatusLabel4"
         Me.ToolStripStatusLabel4.Size = New System.Drawing.Size(49, 17)
         Me.ToolStripStatusLabel4.Text = "NAMA :"
@@ -229,20 +232,14 @@ Partial Class FrmMenuUtama
         '
         Me.tmtgl_jam.Enabled = True
         '
-        'CETAKLAPORAN
-        '
-        Me.CETAKLAPORAN.Name = "CETAKLAPORAN"
-        Me.CETAKLAPORAN.Size = New System.Drawing.Size(180, 22)
-        Me.CETAKLAPORAN.Text = "CETAK LAPORAN"
-        '
         'FrmMenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.APPS_PERPUSTAKAAN.My.Resources.Resources.bg_perpus_1
         Me.ClientSize = New System.Drawing.Size(956, 450)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "FrmMenuUtama"
@@ -284,5 +281,4 @@ Partial Class FrmMenuUtama
     Friend WithEvents NamaPetugas As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel5 As ToolStripStatusLabel
     Friend WithEvents tmtgl_jam As Timer
-    Friend WithEvents CETAKLAPORAN As ToolStripMenuItem
 End Class

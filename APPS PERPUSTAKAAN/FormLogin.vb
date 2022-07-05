@@ -8,20 +8,28 @@ Public Class FormLogin
         FrmMenuUtama.LAPORAN.Enabled = True
     End Sub
     Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        kodepetugas.Clear()
+        Password.Clear()
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Call OpenConn()
-        Cmd = New MySqlCommand("select * from tblpetugas where KodePetugas = '" & kodepetugas.Text & "' and PasswordPetugas ='" & Password.Text & "'", Conn)
-        Rd = Cmd.ExecuteReader
-        Rd.Read()
-        If Rd.HasRows Then
-            Me.Close()
-            Call Terbuka()
-            FrmMenuUtama.KodePetugas.Text = Rd!KodePetugas
-            FrmMenuUtama.NamaPetugas.Text = Rd!NamaPetugas
-            FrmMenuUtama.StatusPetugas.Text = Rd!StatusPetugas
+        If kodepetugas.Text = "" Or Password.Text = "" Then
+            MsgBox("Kode Petugas Atau Password Tidak Boleh Kosong !!!")
+            kodepetugas.Focus()
+        Else
+            Call OpenConn()
+            Cmd = New MySqlCommand("select * from tblpetugas where KodePetugas = '" & kodepetugas.Text & "' and PasswordPetugas ='" & Password.Text & "'", Conn)
+            Rd = Cmd.ExecuteReader
+            Rd.Read()
+            If Rd.HasRows Then
+                Me.Close()
+                Call Terbuka()
+                FrmMenuUtama.KodePetugas.Text = Rd!KodePetugas
+                FrmMenuUtama.NamaPetugas.Text = Rd!NamaPetugas
+                FrmMenuUtama.StatusPetugas.Text = Rd!StatusPetugas
+            Else
+                MsgBox("Kode Petugas Atau password SALAH !!!")
+            End If
         End If
     End Sub
 

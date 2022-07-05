@@ -95,6 +95,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CetakLaporan.Designer.vb">
+      <DependentUpon>CetakLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CetakLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,10 +118,10 @@
     <Compile Include="FormBuku.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLAPORAN.Designer.vb">
-      <DependentUpon>FormLAPORAN.vb</DependentUpon>
+    <Compile Include="FormLaporan.Designer.vb">
+      <DependentUpon>FormLaporan.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormLAPORAN.vb">
+    <Compile Include="FormLaporan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPeminjaman.Designer.vb">
@@ -167,14 +173,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CetakLaporan.resx">
+      <DependentUpon>CetakLaporan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAnggota.resx">
       <DependentUpon>FormAnggota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBuku.resx">
       <DependentUpon>FormBuku.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLAPORAN.resx">
-      <DependentUpon>FormLAPORAN.vb</DependentUpon>
+    <EmbeddedResource Include="FormLaporan.resx">
+      <DependentUpon>FormLaporan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPeminjaman.resx">
       <DependentUpon>FormPeminjaman.vb</DependentUpon>
@@ -215,6 +224,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\DataSet1.tblpinjamDataTable.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -238,6 +248,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

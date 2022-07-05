@@ -49,6 +49,7 @@ Public Class FormAnggota
         Else
             If kodeanggota.Text = "" Or namaanggota.Text = "" Or jeniskelamin.Text = "" Or alamatanggota.Text = "" Or telponanggota.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodeanggota.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -75,6 +76,7 @@ Public Class FormAnggota
         Else
             If kodeanggota.Text = "" Or namaanggota.Text = "" Or jeniskelamin.Text = "" Or alamatanggota.Text = "" Or telponanggota.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodeanggota.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -101,6 +103,7 @@ Public Class FormAnggota
         Else
             If kodeanggota.Text = "" Or namaanggota.Text = "" Or jeniskelamin.Text = "" Or alamatanggota.Text = "" Or telponanggota.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodeanggota.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -164,6 +167,12 @@ Public Class FormAnggota
                 alamatanggota.Text = Rd.Item("AlamatAnggota")
                 telponanggota.Text = Rd.Item("TelponAnggota")
             End If
+        End If
+    End Sub
+
+    Private Sub kodeanggota_KeyDown(sender As Object, e As KeyEventArgs) Handles kodeanggota.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            namaanggota.Focus()
         End If
     End Sub
 End Class

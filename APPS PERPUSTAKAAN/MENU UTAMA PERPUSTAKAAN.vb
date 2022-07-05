@@ -52,8 +52,7 @@
         FormPengembalian.ShowDialog()
     End Sub
 
-    Private Sub CETAKLAPORAN_Click(sender As Object, e As EventArgs) Handles CETAKLAPORAN.Click
-        FormLAPORAN.ShowDialog()
-        FormLAPORAN.Dispose()
+    Private Sub LAPORAN_Click(sender As Object, e As EventArgs) Handles LAPORAN.Click
+        CetakLaporan.ShowDialog()
     End Sub
 End Class

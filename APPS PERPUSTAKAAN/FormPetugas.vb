@@ -46,6 +46,7 @@ Public Class FormPetugas
         Else
             If kodepetugas.Text = "" Or namapetugas.Text = "" Or passpetugas.Text = "" Or statuspetugas.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodepetugas.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -86,6 +87,7 @@ Public Class FormPetugas
         Else
             If kodepetugas.Text = "" Or namapetugas.Text = "" Or passpetugas.Text = "" Or statuspetugas.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodepetugas.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -112,6 +114,7 @@ Public Class FormPetugas
         Else
             If kodepetugas.Text = "" Or namapetugas.Text = "" Or passpetugas.Text = "" Or statuspetugas.Text = "" Then
                 MsgBox("Pastikan Semua Filed Terisi")
+                kodepetugas.Focus()
             Else
                 Try
                     Call OpenConn()
@@ -167,6 +170,12 @@ Public Class FormPetugas
     Private Sub namapetugas_KeyPress(sender As Object, e As KeyPressEventArgs) Handles namapetugas.KeyPress
         If e.KeyChar = Chr(13) Then
             passpetugas.Focus()
+        End If
+    End Sub
+
+    Private Sub kodepetugas_KeyDown(sender As Object, e As KeyEventArgs) Handles kodepetugas.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            namapetugas.Focus()
         End If
     End Sub
 End Class
